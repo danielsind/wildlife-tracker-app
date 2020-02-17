@@ -41,6 +41,7 @@ public class Ranger {
 
     public void save() {
         try (Connection con = DB.sql2o.open()) {
+            con.setRollbackOnException(false);
             String sql = "INSERT INTO rangers (name, email) VALUES (:name, :email)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", this.name)
@@ -53,12 +54,14 @@ public class Ranger {
     public static List<Ranger> all() {
         String sql = "SELECT * FROM rangers";
         try (Connection con = DB.sql2o.open()) {
+            con.setRollbackOnException(false);
             return con.createQuery(sql).executeAndFetch(Ranger.class);
         }
     }
 
     public static Ranger find(int id) {
         try (Connection con = DB.sql2o.open()) {
+            con.setRollbackOnException(false);
             String sql = "SELECT * FROM rangers where id=:id";
             Ranger ranger = con.createQuery(sql)
                     .addParameter("id", id)
