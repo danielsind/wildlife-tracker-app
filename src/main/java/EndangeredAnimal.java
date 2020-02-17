@@ -3,14 +3,16 @@ import org.sql2o.*;
 
 public class EndangeredAnimal extends Animal {
        public int id;
+       public static final String DATABASE_TYPE = "Endangered";
     public EndangeredAnimal(String name,String health,String age){
         this.age=age;
         this.name = name;
         this.health = health;
         this.id = id;
+        type = DATABASE_TYPE;
     }
     public static List<EndangeredAnimal> all() {
-        String sql = "SELECT * FROM animals;";
+        String sql = "SELECT * FROM animals WHERE type = 'Endangered';";
         try(Connection con = DB.sql2o.open()) {
             return con.createQuery(sql).executeAndFetch(EndangeredAnimal.class);
         }
@@ -27,11 +29,12 @@ public class EndangeredAnimal extends Animal {
     public void save() {
         try (Connection con = DB.sql2o.open()) {
             con.setRollbackOnException(false);
-            String sql = "INSERT INTO animals (name, health,age) VALUES (:name, :name, :name);";
+            String sql = "INSERT INTO animals (name, health,age) VALUES (:name, :health, :age, :type)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", this.name)
-                    .addParameter("name",this.health)
-                    .addParameter("name",this.age)
+                    .addParameter("health",this.health)
+                    .addParameter("age",this.age)
+                    .addParameter("type",this.type)
                     .executeUpdate()
                     .getKey();
         }

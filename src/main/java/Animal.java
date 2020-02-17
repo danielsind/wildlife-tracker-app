@@ -3,6 +3,7 @@ public abstract class Animal {
     public String health;
     public String age;
     public int id;
+    public String type;
 
     public String getName() {
         return name;
@@ -34,5 +35,13 @@ public abstract class Animal {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
