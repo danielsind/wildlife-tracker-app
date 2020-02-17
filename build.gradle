@@ -1,12 +1,14 @@
 plugins {
     id 'groovy'
     id 'java'
+    id 'application'
 }
 
 group 'com.wildlife'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
+mainClassName = 'App'
 
 repositories {
     mavenCentral()
