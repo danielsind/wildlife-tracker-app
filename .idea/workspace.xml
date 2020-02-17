@@ -7,14 +7,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EndangeredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EndangeredAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NonEndangeredAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NonEndangeredAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ranger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ranger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sighting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sighting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/NonEndangeredAnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NonEndangeredAnimalTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,13 +74,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.RangerTest">
-    <configuration name="EndangeredAnimalTest.endangeredAnimal_instantiatesCorrectly_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.EndangeredAnimalTest.save_successfullyAddsEndangeredAnimalToDatabase_List">
+    <configuration name="EndangeredAnimalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalTest.endangeredAnimal_instantiatesCorrectly_true&quot;" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -101,12 +95,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RangerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EndangeredAnimalTest.save_assignsIdToEndangeredAnimal" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;RangerTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalTest.save_assignsIdToEndangeredAnimal&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -121,12 +115,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RangerTest.equals_returnsTrueIfNameAndEmailAreSame_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EndangeredAnimalTest.save_assignsIdToFireMonster" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;RangerTest.equals_returnsTrueIfNameAndEmailAreSame_true&quot;" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalTest.save_assignsIdToFireMonster&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -141,12 +135,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RangerTest.ranger_instantiatesCorrectly_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EndangeredAnimalTest.save_successfullyAddsEndangeredAnimalToDatabase_List" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;RangerTest.ranger_instantiatesCorrectly_true&quot;" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalTest.save_successfullyAddsEndangeredAnimalToDatabase_List&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="EndangeredAnimalTest.save_successfullyAddsFireMonsterToDatabase_List" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;EndangeredAnimalTest.save_successfullyAddsFireMonsterToDatabase_List&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -163,10 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RangerTest" />
-        <item itemvalue="Gradle.EndangeredAnimalTest.endangeredAnimal_instantiatesCorrectly_true" />
-        <item itemvalue="Gradle.RangerTest.ranger_instantiatesCorrectly_true" />
-        <item itemvalue="Gradle.RangerTest.equals_returnsTrueIfNameAndEmailAreSame_true" />
+        <item itemvalue="Gradle.EndangeredAnimalTest.save_successfullyAddsEndangeredAnimalToDatabase_List" />
+        <item itemvalue="Gradle.EndangeredAnimalTest" />
+        <item itemvalue="Gradle.EndangeredAnimalTest.save_assignsIdToEndangeredAnimal" />
+        <item itemvalue="Gradle.EndangeredAnimalTest.save_assignsIdToFireMonster" />
+        <item itemvalue="Gradle.EndangeredAnimalTest.save_successfullyAddsFireMonsterToDatabase_List" />
       </list>
     </recent_temporary>
   </component>

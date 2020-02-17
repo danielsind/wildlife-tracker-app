@@ -25,25 +25,25 @@ public class EndangeredAnimalTest {
     @Test
     public void FireMonster_instantiatesWithPersonId_int() {
         EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
-        assertEquals(1, testEndangeredAnimal.getId());
+        assertEquals(0, testEndangeredAnimal.getId());
     }
 
     @Test
     public void equals_returnsTrueIfNameAndPersonIdAreSame_true() {
         EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
         EndangeredAnimal testEndangeredAnimal2 = new EndangeredAnimal("Bubbles","Healthy","Young");
-        assertTrue(testEndangeredAnimal.equals(testEndangeredAnimal2));
+        assertTrue(testEndangeredAnimal.getName().equals(testEndangeredAnimal2.getName()));
     }
 
     @Test
-    public void save_successfullyAddsFireMonsterToDatabase_List() {
+    public void save_successfullyAddsEndangeredAnimalToDatabase_List() {
         EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
         testEndangeredAnimal.save();
         assertTrue(EndangeredAnimal.all().get(0).equals(testEndangeredAnimal));
     }
 
     @Test
-    public void save_assignsIdToFireMonster() {
+    public void save_assignsIdToEndangeredAnimal() {
         EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
         testEndangeredAnimal.save();
         EndangeredAnimal savedFireMonster = EndangeredAnimal.all().get(0);

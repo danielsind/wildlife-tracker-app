@@ -2,11 +2,12 @@ import java.util.List;
 import org.sql2o.*;
 
 public class EndangeredAnimal extends Animal {
-
+       public int id;
     public EndangeredAnimal(String name,String health,String age){
         this.age=age;
         this.name = name;
         this.health = health;
+        this.id = id;
     }
     public static List<EndangeredAnimal> all() {
         String sql = "SELECT * FROM animals;";
@@ -25,11 +26,12 @@ public class EndangeredAnimal extends Animal {
     }
     public void save() {
         try (Connection con = DB.sql2o.open()) {
-            String sql = "INSERT INTO animals (name, health,age) VALUES (:name, :health, :age);";
+            con.setRollbackOnException(false);
+            String sql = "INSERT INTO animals (name, health,age) VALUES (:name, :name, :name);";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", this.name)
-                    .addParameter("health",this.health)
-                    .addParameter("age",this.age)
+                    .addParameter("name",this.health)
+                    .addParameter("name",this.age)
                     .executeUpdate()
                     .getKey();
         }
