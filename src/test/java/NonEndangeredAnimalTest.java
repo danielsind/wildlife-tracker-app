@@ -23,13 +23,13 @@ public class NonEndangeredAnimalTest {
     }
 
     @Test
-    public void FireMonster_instantiatesWithPersonId_int() {
+    public void FireMonster_instantiatesWithAnimalId_int() {
         NonEndangeredAnimal testNonEndangeredAnimal = new NonEndangeredAnimal("Bubbles","Healthy","Young");
         assertEquals(1, testNonEndangeredAnimal.getId());
     }
 
     @Test
-    public void equals_returnsTrueIfNameAndPersonIdAreSame_true() {
+    public void equals_returnsTrueIfNameAndAnimalIdAreSame_true() {
         NonEndangeredAnimal testNonEndangeredAnimal = new NonEndangeredAnimal("Bubbles","Healthy","Young");
         NonEndangeredAnimal testNonEndangeredAnimal2 = new NonEndangeredAnimal("Bubbles","Healthy","Young");
         assertTrue(testNonEndangeredAnimal.equals(testNonEndangeredAnimal2));

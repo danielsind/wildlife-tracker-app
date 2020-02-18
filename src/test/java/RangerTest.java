@@ -1,5 +1,8 @@
 import org.junit.Rule;
 import org.junit.Test;
+
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 public class RangerTest {
@@ -57,6 +60,17 @@ public class RangerTest {
         Ranger secondRanger = new Ranger("Harriet", "harriet@harriet.com");
         secondRanger.save();
         assertEquals(Ranger.find(secondRanger.getId()), secondRanger);
+    }
+    @Test
+    public void getAnimals_retrievesAllAnimalsFromDatabase_monstersList() {
+        Ranger testRanger = new Ranger("Henry", "henry@henry.com");
+        testRanger.save();
+        EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
+        testEndangeredAnimal.save();
+        NonEndangeredAnimal testNonEndangeredAnimal = new NonEndangeredAnimal("Cat","Healthy","Young");
+        testNonEndangeredAnimal.save();
+        Object[] animals = new Object[] { testEndangeredAnimal, testNonEndangeredAnimal };
+        assertTrue(testRanger.getAnimals().containsAll(Arrays.asList(animals)));
     }
 
 }

@@ -23,13 +23,13 @@ public class EndangeredAnimalTest {
     }
 
     @Test
-    public void FireMonster_instantiatesWithPersonId_int() {
+    public void FireMonster_instantiatesWithAnimalId_int() {
         EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
         assertEquals(0, testEndangeredAnimal.getId());
     }
 
     @Test
-    public void equals_returnsTrueIfNameAndPersonIdAreSame_true() {
+    public void equals_returnsTrueIfNameAndAnimalIdAreSame_true() {
         EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
         EndangeredAnimal testEndangeredAnimal2 = new EndangeredAnimal("Bubbles","Healthy","Young");
         assertTrue(testEndangeredAnimal.getName().equals(testEndangeredAnimal2.getName()));
@@ -46,12 +46,12 @@ public class EndangeredAnimalTest {
     public void save_assignsIdToEndangeredAnimal() {
         EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
         testEndangeredAnimal.save();
-        EndangeredAnimal savedFireMonster = EndangeredAnimal.all().get(0);
-        assertEquals(savedFireMonster.getId(), testEndangeredAnimal.getId());
+        EndangeredAnimal savedEndangeredAnimal = EndangeredAnimal.all().get(0);
+        assertEquals(savedEndangeredAnimal.getId(), testEndangeredAnimal.getId());
     }
 
     @Test
-    public void all_returnsAllInstancesOfFireMonster_true() {
+    public void all_returnsAllInstancesOfEndangeredAnimal_true() {
         EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
         testEndangeredAnimal.save();
         EndangeredAnimal testEndangeredAnimal2 = new EndangeredAnimal("Buffallo","Healthy","Young");

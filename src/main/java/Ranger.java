@@ -69,4 +69,23 @@ public class Ranger {
             return ranger;
         }
     }
+    public List<Object> getAnimals() {
+        List<Object> allAnimals = new ArrayList<Object>();
+
+        try(Connection con = DB.sql2o.open()) {
+            String sqlEndangered = "SELECT * FROM animals WHERE personId=:id AND type='Endangered';";
+            List<EndangeredAnimal> endangeredAnimals = con.createQuery(sqlEndangered)
+                    .addParameter("id", this.id)
+                    .executeAndFetch(EndangeredAnimal.class);
+            allAnimals.addAll(endangeredAnimals);
+
+            String sqlNonEndangered = "SELECT * FROM animals WHERE personId=:id AND type='Non_Endangered';";
+            List<NonEndangeredAnimal> nonEndangeredAnimals = con.createQuery(sqlNonEndangered)
+                    .addParameter("id", this.id)
+                    .executeAndFetch(NonEndangeredAnimal.class);
+            allAnimals.addAll(nonEndangeredAnimals);
+        }
+
+        return allAnimals;
+    }
 }

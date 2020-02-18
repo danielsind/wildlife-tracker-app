@@ -1,31 +1,29 @@
-import java.security.PublicKey;
-
 public class Sighting {
-    public String rangerName;
+    public String rangername;
     public String location;
-    public String animalName;
-    public String animalType;
-    public String animalHealth;
-    public String animalAge;
-    public int  animalId;
+    public String animalname;
+    public String animaltype;
+    public String animalhealth;
+    public String animalage;
+    public int id;
 
 
-    public Sighting(String rangerName,String animalName,String location,String animalType,String animalHealth,String animalAge){
-       this.animalName = animalName;
-       this.animalType = animalType;
+    public Sighting(String rangername, String animalname, String location, String animaltype, String animalhealth, String animalage){
+       this.animalname = animalname;
+       this.animaltype = animaltype;
        this.location = location;
-       this.rangerName = rangerName;
-       this.animalHealth = animalHealth;
-       this.animalAge  = animalAge;
-       this.animalId = animalId;
+       this.rangername = rangername;
+       this.animalhealth = animalhealth;
+       this.animalage = animalage;
+       this.id = id;
     }
 
-    public String getRangerName() {
-        return rangerName;
+    public String getRangername() {
+        return rangername;
     }
 
-    public void setRangerName(String rangerName) {
-        this.rangerName = rangerName;
+    public void setRangername(String rangername) {
+        this.rangername = rangername;
     }
 
     public String getLocation() {
@@ -36,43 +34,43 @@ public class Sighting {
         this.location = location;
     }
 
-    public String getAnimalName() {
-        return animalName;
+    public String getAnimalname() {
+        return animalname;
     }
 
-    public void setAnimalName(String animalName) {
-        this.animalName = animalName;
+    public void setAnimalname(String animalname) {
+        this.animalname = animalname;
     }
 
     public String getAnimalType() {
-        return animalType;
+        return animaltype;
     }
 
     public void setAnimalType(String animalType) {
-        this.animalType = animalType;
+        this.animaltype = animalType;
     }
 
-    public String getAnimalHealth() {
-        return animalHealth;
+    public String getAnimalhealth() {
+        return animalhealth;
     }
 
-    public void setAnimalHealth(String animalHealth) {
-        this.animalHealth = animalHealth;
+    public void setAnimalhealth(String animalhealth) {
+        this.animalhealth = animalhealth;
     }
 
-    public String getAnimalAge() {
-        return animalAge;
+    public String getAnimalage() {
+        return animalage;
     }
 
-    public void setAnimalAge(String animalAge) {
-        this.animalAge = animalAge;
+    public void setAnimalage(String animalage) {
+        this.animalage = animalage;
     }
 
-    public int getAnimalId() {
-        return animalId;
+    public int getId() {
+        return id;
     }
 
-    public void setAnimalId(int animalId) {
-        this.animalId = animalId;
+    public void setId(int id) {
+        this.id = id;
     }
 }
