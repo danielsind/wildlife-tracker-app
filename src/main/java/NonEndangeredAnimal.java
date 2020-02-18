@@ -32,7 +32,7 @@ public class NonEndangeredAnimal extends Animal {
     }
     public static NonEndangeredAnimal find(int id) {
         try(Connection con = DB.sql2o.open()) {
-            String sql = "SELECT * FROM animals where id=:id";
+            String sql = "SELECT * FROM animals WHERE id=:id";
             NonEndangeredAnimal animal = con.createQuery(sql)
                     .addParameter("id", id)
                     .executeAndFetchFirst(NonEndangeredAnimal.class);

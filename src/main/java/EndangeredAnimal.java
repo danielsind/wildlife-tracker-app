@@ -19,7 +19,7 @@ public class EndangeredAnimal extends Animal {
     }
     public static EndangeredAnimal find(int id) {
         try(Connection con = DB.sql2o.open()) {
-            String sql = "SELECT * FROM animals where id=:id";
+            String sql = "SELECT * FROM animals WHERE id=:id";
             EndangeredAnimal animal = con.createQuery(sql)
                     .addParameter("id", id)
                     .executeAndFetchFirst(EndangeredAnimal.class);
