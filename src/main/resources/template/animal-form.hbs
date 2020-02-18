@@ -1,0 +1,22 @@
+{{#partial "content"}}
+
+    <div class="section">
+        <div class="form-left">
+            <h2>Add Non Endangered Animal</h2>
+        </div>
+        <div class="form-right">
+            <h3>Add an animal</h3>
+            <form action="/nonendangered/new" method="post" name="animalform" class="form">
+                <label for="name"></label>
+                <input class="form-control input" type="text" placeholder="Animal name..." name="name" id="name" autocomplete="off">
+                <label for="health"></label>
+                <input class="form-control input" type="text" placeholder="Animal health" name="health" id="health" autocomplete="off">
+                <label for="age"></label>
+                <input class="form-control input " type="text" id="age" name="age" autocomplete="off" placeholder="Non Endangered Animal health">
+                <button type="submit" class="button">Add</button>
+            </form>
+        </div>
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}

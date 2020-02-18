@@ -1,0 +1,30 @@
+{{#partial "content"}}
+
+    <div class="section">
+        <div class="form-left">
+            <h2>Endangered Animals</h2>
+        </div>
+        <div class="form-right">
+            <h3>Add an Endangered animal</h3>
+            <form action="/endangered/new" method="post" name="animalForm" class="form">
+                <label for="name">Animal name</label>
+                <input class="form-control input" type="text" placeholder="Enter the animal name..." id="name" name="animalname" autocomplete="off">
+                <select class="form-control input" name="health" id="name" >
+                    <option label="health" hidden disabled selected value>Health level...</option>
+                    <option value="Healthy">Healthy</option>
+                    <option value="Sick">Sick</option>
+                    <option value="Okay">Okay</option>
+                </select>
+                <select class="form-control input" name="age" id="age">
+                    <option label="age" hidden disabled selected value>Choose age level...</option>
+                    <option value="Newborn">Newborn</option>
+                    <option value="Young">Young</option>
+                    <option value="Adult">Adult</option>
+                </select>
+                <button type="submit" class="button">Add</button>
+            </form>
+        </div>
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}

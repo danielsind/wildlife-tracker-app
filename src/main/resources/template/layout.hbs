@@ -1,37 +1,46 @@
-<!--<link rel='stylesheet' href='/app.css'>-->
-{{#block "header"}}
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <link rel='stylesheet' href='/app.css'>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>{{#block "title"}}WILDLIFE{{/block}}</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/main.css">
-    </head>
-    <body>
-    <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#">Home</a></li>
-        <li role="presentation"><a href="/rangers/sightings">See All Sightings and Rangers</a></li>
-        <li role="presentation"><a href="/sightings/new">Add sighting</a></li>
-        <li role="presentation"><a href="/animal/new">Add Ranger</a></li>
-    </ul>
-    <div class="container-fluid">
-        <!--begin main template-->
-        <div class="page-header">
-            <h1>WildLife <small>Nature is life we value our Animals</small></h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wildlife Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="welcome">
+        <div class="navbar">
+            <div class="navbody">
+                <ul>
+                    <li><a class="a" href="/">Home</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Non Endangered Animals <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dplinks" href="/animals"  style="color:white; background-color:transparent ;">View Animals</a></li>
+                            <li><a class="dplinks" href="/animal/form"  style="color:white; background-color:transparent ;">Add Animal</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Endagered Animals <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dplinks" href="/endangered"  style="color:white; background-color:transparent ;">View Animals</a></li>
+                            <li><a class="dplinks" href="/endangered/form"  style="color:white; background-color:transparent ;">Add Animal</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sighting<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li ><a class="dplinks" href="/sightings"  style="color:white; background-color:transparent ;">View Sighting</a></li>
+                            <li ><a class="dplinks" href="/sightings/form"  style="color:white; background-color:transparent ;">Add Sighting</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-{{/block}}
-<div class="page">
-{{#block "content"}}
-{{/block}}
-
+        <div class="col-md-12">
+            {{#block "content"}}
+            {{/block}}
+        </div>
+    </div>
+</div>>
 {{#block "footer"}}
-    </div>
-    </div>
+    <footer class="footer">
+    </footer>
     </body>
     </html>
 {{/block}}

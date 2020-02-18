@@ -1,0 +1,38 @@
+{{#partial "content"}}
+    <div class="pages">
+        <h2 class="text-center">Sightings</h2>
+    {{#if sightings}}
+            <div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>AnimalID</th>
+                        <th>Location</th>
+                        <th>Ranger Name</th>
+                        <th>Animal Name</th>
+                        <th>Animal Health</th>
+                        <th>Animal Age</th>
+                        <th>Animal Type</th>
+                    </tr>
+                    </thead>
+                    {{#each sightings }}
+                        <tbody>
+                        <tr>
+                            <td>{{ animalid }}</td>
+                            <td>{{ location }}</td>
+                            <td>{{ rangername }}</td>
+                            <td> {{animalname }}</td>
+                            <td>{{animalage}}</td>
+                            <td>{{animaltype}}</td>
+                        </tr>
+                        </tbody>
+                    {{/each}}
+                </table>
+            </div>
+    {{else}}
+            <p>No sightings !!</p>
+            <a href="/sightings/form"  class="otherbuttons">Add sightings</a>
+        </div>
+    {{/if}}
+{{/partial}}
+{{> layout.hbs}}

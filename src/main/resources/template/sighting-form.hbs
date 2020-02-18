@@ -1,0 +1,42 @@
+{{#partial "content"}}
+    <div class="section">
+        <div class="form-left">
+            <h2>Sightings</h2>
+        </div>
+        <div class="form-right">
+            <h3>Add a sighting</h3>
+            <form action="/sightings/new" method="post" name="sightingform" class="form">
+                <label for="rangername">Ranger Name</label>
+                <input class="form-control input" type="text" placeholder="Enter the ranger name..." name="rangername" id="rangername" autocomplete="off">
+                <label for="animalname">Animal Name</label>
+                <input class="form-control input" type="text" placeholder="Enter Animal name" name="animalname" id="animalname">
+                <select class="form-control input" name="location">
+                    <option label="location" hidden disabled selected value>Enter location </option>
+                    <option value="Zone A">Zone A</option>
+                    <option value="Zone B">Zone B</option>
+                    <option value="Zone C">Zone C</option>
+                </select>
+                <select class="form-control input" name="animalhealth">
+                    <option label="animalhealth" hidden disabled selected value>Enter Animal Health </option>
+                    <option value="Healthy">Healthy</option>
+                    <option value="Sick">Sick</option>
+                    <option value="Okay">Okay</option>
+                </select>
+                <select class="form-control input" name="animalage">
+                    <option label="animalage" hidden disabled selected value>Enter Animal Age </option>
+                    <option value="Young">Young</option>
+                    <option value="Adult">Adult</option>
+                    <option value="Child">Child</option>
+                </select>
+                <select class="form-control input" name="type">
+                    <option label="type" hidden disabled selected value>Enter Animal Type </option>
+                    <option value="Endangered">Endangered</option>
+                    <option value="Non_Endangered">Non Endangered</option>
+                </select>
+                <button type="submit" class="button">Add</button>
+            </form>
+        </div>
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}
