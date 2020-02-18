@@ -1,5 +1,6 @@
 import org.sql2o.Connection;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -130,5 +131,17 @@ public class Sighting {
                     .executeAndFetchFirst(Sighting.class);
             return sighting;
         }
+    }
+    public List<Object> getSightings() {
+        List<Object> allSightings = new ArrayList<Object>();
+
+        try(Connection con = DB.sql2o.open()) {
+            String sqlSightings = "SELECT * FROM sightings WHERE id=:id;";
+            List<Sighting> sightings = con.createQuery(sqlSightings)
+                    .addParameter("id", this.id)
+                    .executeAndFetch(Sighting.class);
+            allSightings.addAll(sightings);
+        }
+        return allSightings;
     }
 }
