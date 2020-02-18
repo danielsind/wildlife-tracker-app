@@ -35,57 +35,57 @@ public class EndangeredAnimalTest {
         assertTrue(testEndangeredAnimal.getName().equals(testEndangeredAnimal2.getName()));
     }
 
-    @Test
-    public void save_successfullyAddsEndangeredAnimalToDatabase_List() {
-        EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
-        testEndangeredAnimal.save();
-        assertTrue(EndangeredAnimal.all().get(0).equals(testEndangeredAnimal));
-    }
-
-    @Test
-    public void save_assignsIdToEndangeredAnimal() {
-        EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
-        testEndangeredAnimal.save();
-        EndangeredAnimal savedEndangeredAnimal = EndangeredAnimal.all().get(0);
-        assertEquals(savedEndangeredAnimal.getId(), testEndangeredAnimal.getId());
-    }
-
-    @Test
-    public void all_returnsAllInstancesOfEndangeredAnimal_true() {
-        EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
-        testEndangeredAnimal.save();
-        EndangeredAnimal testEndangeredAnimal2 = new EndangeredAnimal("Buffallo","Healthy","Young");
-        testEndangeredAnimal2.save();
-        assertEquals(true, EndangeredAnimal.all().get(0).equals(testEndangeredAnimal));
-        assertEquals(true, EndangeredAnimal.all().get(1).equals(testEndangeredAnimal2));
-    }
-
-    @Test
-    public void find_returnsEndangeredAnimalWithSameId_secondEndangeredAnimal() {
-        EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
-        testEndangeredAnimal.save();
-        EndangeredAnimal testEndangeredAnimal2 = new EndangeredAnimal("Buffallo","Healthy","Young");
-        testEndangeredAnimal2.save();
-        assertEquals(EndangeredAnimal.find(testEndangeredAnimal2.getId()), testEndangeredAnimal2);
-    }
-
 //    @Test
-//    public void save_savesPersonIdIntoDB_true() {
+//    public void save_successfullyAddsEndangeredAnimalToDatabase_List() {
 //        EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
 //        testEndangeredAnimal.save();
-//        EndangeredAnimal testEndangeredAnimal2 = new EndangeredAnimal("Lionness","Healthy","Young");
-//        testEndangeredAnimal2.save();
-//        EndangeredAnimal savedEndangereAnimal = EndangeredAnimal.find(testEndangeredAnimal.getId());
-//        assertEquals(savedEndangereAnimal.getPersonId(), testEndangeredAnimal.getId());
+//        assertTrue(EndangeredAnimal.all().get(0).equals(testEndangeredAnimal));
 //    }
-
-
-    @Test
-    public void save_assignsIdToObject() {
-        EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
-        testEndangeredAnimal.save();
-        EndangeredAnimal savedEndangeredAnimal = EndangeredAnimal.all().get(0);
-        assertEquals(testEndangeredAnimal.getId(), savedEndangeredAnimal.getId());
-    }
+//
+//    @Test
+//    public void save_assignsIdToEndangeredAnimal() {
+//        EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
+//        testEndangeredAnimal.save();
+//        EndangeredAnimal savedEndangeredAnimal = EndangeredAnimal.all().get(0);
+//        assertEquals(savedEndangeredAnimal.getId(), testEndangeredAnimal.getId());
+//    }
+//
+//    @Test
+//    public void all_returnsAllInstancesOfEndangeredAnimal_true() {
+//        EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
+//        testEndangeredAnimal.save();
+//        EndangeredAnimal testEndangeredAnimal2 = new EndangeredAnimal("Buffallo","Healthy","Young");
+//        testEndangeredAnimal2.save();
+//        assertEquals(true, EndangeredAnimal.all().get(0).equals(testEndangeredAnimal));
+//        assertEquals(true, EndangeredAnimal.all().get(1).equals(testEndangeredAnimal2));
+//    }
+//
+//    @Test
+//    public void find_returnsEndangeredAnimalWithSameId_secondEndangeredAnimal() {
+//        EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
+//        testEndangeredAnimal.save();
+//        EndangeredAnimal testEndangeredAnimal2 = new EndangeredAnimal("Buffallo","Healthy","Young");
+//        testEndangeredAnimal2.save();
+//        assertEquals(EndangeredAnimal.find(testEndangeredAnimal2.getId()), testEndangeredAnimal2);
+//    }
+//
+////    @Test
+////    public void save_savesPersonIdIntoDB_true() {
+////        EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
+////        testEndangeredAnimal.save();
+////        EndangeredAnimal testEndangeredAnimal2 = new EndangeredAnimal("Lionness","Healthy","Young");
+////        testEndangeredAnimal2.save();
+////        EndangeredAnimal savedEndangereAnimal = EndangeredAnimal.find(testEndangeredAnimal.getId());
+////        assertEquals(savedEndangereAnimal.getPersonId(), testEndangeredAnimal.getId());
+////    }
+//
+//
+//    @Test
+//    public void save_assignsIdToObject() {
+//        EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
+//        testEndangeredAnimal.save();
+//        EndangeredAnimal savedEndangeredAnimal = EndangeredAnimal.all().get(0);
+//        assertEquals(testEndangeredAnimal.getId(), savedEndangeredAnimal.getId());
+//    }
 
 }

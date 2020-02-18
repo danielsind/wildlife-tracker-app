@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d13dc2bf-6498-4514-afdd-4f76e3104dea" name="Default Changelist" comment="" />
+    <list default="true" id="d13dc2bf-6498-4514-afdd-4f76e3104dea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/template/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/template/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EndangeredAnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/NonEndangeredAnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NonEndangeredAnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RangerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RangerTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +64,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Hero-squad-App" />
+    <property name="last_opened_file_path" value="$USER_HOME$/lenny/WildlifeTracker" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -67,7 +81,47 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.NonEndangeredAnimalTest.NonEndangeredAnimal_instantiatesWithName_String">
+  <component name="RunManager" selected="Gradle.NonEndangeredAnimalTest.NonEndaangeredAnimal_instantiatesWithAnimalId_int">
+    <configuration name="NonEndangeredAnimalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;NonEndangeredAnimalTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="NonEndangeredAnimalTest.NonEndaangeredAnimal_instantiatesWithAnimalId_int" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;NonEndangeredAnimalTest.NonEndaangeredAnimal_instantiatesWithAnimalId_int&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="NonEndangeredAnimalTest.NonEndangeredAnimal_instantiatesCorrectly_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -108,52 +162,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="NonEndangeredAnimalTest.all_returnsAllInstancesOfFireMonster_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NonEndangeredAnimalTest.equals_returnsTrueIfNameAreSame_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;NonEndangeredAnimalTest.all_returnsAllInstancesOfFireMonster_true&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="NonEndangeredAnimalTest.save_assignsIdToFireMonster" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;NonEndangeredAnimalTest.save_assignsIdToFireMonster&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="NonEndangeredAnimalTest.save_assignsIdToObject" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;NonEndangeredAnimalTest.save_assignsIdToObject&quot;" />
+        <option name="scriptParameters" value="--tests &quot;NonEndangeredAnimalTest.equals_returnsTrueIfNameAreSame_true&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -170,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.NonEndangeredAnimalTest.NonEndaangeredAnimal_instantiatesWithAnimalId_int" />
         <item itemvalue="Gradle.NonEndangeredAnimalTest.NonEndangeredAnimal_instantiatesWithName_String" />
         <item itemvalue="Gradle.NonEndangeredAnimalTest.NonEndangeredAnimal_instantiatesCorrectly_true" />
-        <item itemvalue="Gradle.NonEndangeredAnimalTest.save_assignsIdToObject" />
-        <item itemvalue="Gradle.NonEndangeredAnimalTest.all_returnsAllInstancesOfFireMonster_true" />
-        <item itemvalue="Gradle.NonEndangeredAnimalTest.save_assignsIdToFireMonster" />
+        <item itemvalue="Gradle.NonEndangeredAnimalTest.equals_returnsTrueIfNameAreSame_true" />
+        <item itemvalue="Gradle.NonEndangeredAnimalTest" />
       </list>
     </recent_temporary>
   </component>
