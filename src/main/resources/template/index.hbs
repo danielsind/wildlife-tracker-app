@@ -1,0 +1,24 @@
+{{#partial "content"}}
+    <h1>Rangers</h1>
+
+    {{#if rangers}}
+        {{#each rangers}}
+            <p>Current Rangers</p>
+            <p>{{name}} <a href="/rangers/{{id}}">read more</a> </p>
+        {{/each}}
+    {{else}}
+        <p>No Rangers yet</p>
+    {{/if}}
+    <h1>Sightings</h1>
+    {{#each sightings}}
+        <div class="card-body">
+            <p>Ranger Name : {{rangername}}</p>
+            <p>Location: {{location}}</p>
+            <p>Animal Name: {{animalname}}</p>
+            <p>Animal TYpe: {{animaltype}}</p>
+            <p>Animal Health: {{animaltype}}</p>
+            <p>Animal Age: {{animalage}}</p>
+        </div>
+    {{/each}}
+{{/partial}}
+{{>layout.hbs}}
