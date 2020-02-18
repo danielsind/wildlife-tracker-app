@@ -17,13 +17,13 @@ public class EndangeredAnimalTest {
     }
 
     @Test
-    public void FireMonster_instantiatesWithName_String() {
+    public void EndangeredAnimal_instantiatesWithName_String() {
         EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
         assertEquals("Bubbles", testEndangeredAnimal.getName());
     }
 
     @Test
-    public void FireMonster_instantiatesWithAnimalId_int() {
+    public void EndangeredAnimal_instantiatesWithAnimalId_int() {
         EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
         assertEquals(0, testEndangeredAnimal.getId());
     }
@@ -61,7 +61,7 @@ public class EndangeredAnimalTest {
     }
 
     @Test
-    public void find_returnsFireMonsterWithSameId_secondFireMonster() {
+    public void find_returnsEndangeredAnimalWithSameId_secondEndangeredAnimal() {
         EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
         testEndangeredAnimal.save();
         EndangeredAnimal testEndangeredAnimal2 = new EndangeredAnimal("Buffallo","Healthy","Young");

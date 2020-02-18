@@ -54,7 +54,7 @@ public class RangerTest {
     }
 
     @Test
-    public void find_returnsRangerWithSameId_secondPerson() {
+    public void find_returnsRangerWithSameId_secondRanger() {
         Ranger firstRanger = new Ranger("Henry", "henry@henry.com");
         firstRanger.save();
         Ranger secondRanger = new Ranger("Harriet", "harriet@harriet.com");
@@ -62,7 +62,7 @@ public class RangerTest {
         assertEquals(Ranger.find(secondRanger.getId()), secondRanger);
     }
     @Test
-    public void getAnimals_retrievesAllAnimalsFromDatabase_monstersList() {
+    public void getAnimals_retrievesAllAnimalsFromDatabase_animalList() {
         Ranger testRanger = new Ranger("Henry", "henry@henry.com");
         testRanger.save();
         EndangeredAnimal testEndangeredAnimal = new EndangeredAnimal("Bubbles","Healthy","Young");
